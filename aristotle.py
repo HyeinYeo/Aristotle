@@ -184,13 +184,13 @@ def visualize_results(results_df):
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.show()
     
-    # 라벨별 평균 수사학적 요소 점수
+    # label별 평균 수사학적 요소 점수
     plt.figure(figsize=(12, 6))
     
-    # 라벨별 평균 계산
+    # label별 평균 계산
     label_avg = results_df.groupby('label')[['pathos_score', 'ethos_score', 'logos_score']].mean()
     
-    # 라벨 종류 확인
+    # label 종류 확인
     labels = label_avg.index.tolist()
     
     # 그래프 위치 설정
@@ -217,21 +217,21 @@ def visualize_results(results_df):
     add_labels(bars2)
     add_labels(bars3)
     
-    plt.xlabel('라벨')
+    plt.xlabel('label')
     plt.ylabel('점수 (텍스트 1000자당)')
-    plt.title('라벨별 평균 수사학적 요소 점수')
+    plt.title('label별 평균 수사학적 요소 점수')
     plt.xticks(x, labels)
     plt.legend()
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.tight_layout()
     plt.show()
     
-    # 라벨별로 타이틀마다의 수사학적 요소 시각화
-    # 각 라벨별로 별도의 그래프 생성
+    # label별로 타이틀마다의 수사학적 요소 시각화
+    # 각 label별로 별도의 그래프 생성
     unique_labels = results_df['label'].unique()
     
     for label in unique_labels:
-        # 현재 라벨에 해당하는 데이터만 필터링
+        # 현재 label에 해당하는 데이터만 필터링
         label_data = results_df[results_df['label'] == label]
         
         plt.figure(figsize=(14, 8))
@@ -252,7 +252,7 @@ def visualize_results(results_df):
         
         plt.xlabel('텍스트')
         plt.ylabel('점수 (텍스트 1000자당)')
-        plt.title(f'라벨 "{label}"의 텍스트별 수사학적 요소 비교')
+        plt.title(f'label "{label}"의 텍스트별 수사학적 요소 비교')
         
         # 타이틀이 너무 길면 자르기
         plt.xticks(x, [t[:10] + '...' if len(t) > 10 else t for t in titles], rotation=45, ha='right')
