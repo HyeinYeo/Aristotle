@@ -65,10 +65,12 @@ python main.py
 프로그램은 다음과 같은 결과를 제공합니다:
 
 1. 콘솔에 각 텍스트별 수사학적 요소 점수 출력
+  
 2. 시각화된 그래프:
    - 전체 텍스트의 평균 수사학적 요소 점수
-   - 라벨별 평균 수사학적 요소 점수
-   - 각 라벨 내 텍스트별 수사학적 요소 비교
+   - 레이블별 평균 수사학적 요소 점수
+   - 각 레이블 내 텍스트별 수사학적 요소 비교
+
 
 ## 주요 함수 설명
 
@@ -109,3 +111,23 @@ python main.py
 - 복합어 탐지 문제 해결
 - 기계학습 모델과 연동하여 분석 성능 향상
 - 웹 인터페이스 구현
+
+---
+## AI 생성 허위정보 텍스트에 대한 분석 결과
+1. 콘솔에 각 텍스트별 수사학적 요소 점수 출력
+   ![image](https://github.com/user-attachments/assets/e9398960-ca9a-4dbc-8672-2c4cb5be63a5)
+  
+2. 시각화된 그래프:
+   - 전체 텍스트의 평균 수사학적 요소 점수
+     ![image](https://github.com/user-attachments/assets/6c0f0d0f-4377-4087-a97b-ee23161459a2)
+
+   - 레이블별 평균 수사학적 요소 점수
+     ![image](https://github.com/user-attachments/assets/0c0069a9-0327-4f0c-86d3-de66dddbfd7c)
+
+   - 각 레이블 내 텍스트별 수사학적 요소 비교
+      ![image](https://github.com/user-attachments/assets/31f4ba8a-1cda-4cc9-b844-f95fb9543960)
+     ![image](https://github.com/user-attachments/assets/26d81ee4-6a60-4d0c-95c9-8fc3536fc632)
+     ![image](https://github.com/user-attachments/assets/855cc76a-fa96-4987-b67e-a58a38b09af1)
+     ![image](https://github.com/user-attachments/assets/b7ada448-fd62-49d4-811d-e611f6848127)
+     ![image](https://github.com/user-attachments/assets/bfc23d91-ce7b-4ca7-b711-a57bf12baf2b)
+
